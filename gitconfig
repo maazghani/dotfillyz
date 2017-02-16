@@ -1,0 +1,58 @@
+[user]
+	name = Maaz Ghani
+	email = maazghani@github.com 
+	initials = mg
+
+[credential]
+	helper = osxkeychain
+
+[push]
+	default = current
+
+[interactive]
+	singlekey = true
+
+[alias]
+	amend = commit --amend --no-edit
+	new = !git init && git commit -m “root” --allow-empty
+	please = push --force-with-lease
+	shorti = status --short --branch
+	staaash = stash --all
+	staash = stash --include-untracked
+	stsh = stash --keep-index
+	br = branch
+	ci = commit
+	cl = clone
+	co = checkout
+	cp = cherry-pick
+	dc = diff --cached
+	diff = diff --word-diff
+	diffr	= "!f() { git diff "$1"^.."$1"; }; f"
+	dl = "!git ll -1"
+	dlc = diff --cached HEAD^
+	dr	= "!f() { git diff "$1"^.."$1"; }; f"
+	fa = fetch --all --tags --prune
+	fl = log -u
+	fr = fresh -frs
+	frl = fresh -lrs
+	ignored = ls-files --others
+	la = "!git config -l | grep alias | cut -c 7-"
+	lc	= "!f() { git ll "$1"^.."$1"; }; f"
+	ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+	lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+	le = log --oneline --decorate
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	pa = pull --rebase
+	r = reset
+	r1 = reset HEAD^
+	r2 = reset HEAD^^
+	rh = reset --hard
+	rh1 = reset HEAD^ --hard
+	rh2 = reset HEAD^^ --hard
+	s = status
+	sa = stash apply
+	sl = stash list
+	ss = stash save
+	st = status -s

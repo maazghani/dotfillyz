@@ -1,0 +1,10 @@
+- clean:
+    - "~"
+- shell:
+    - "git submodule update --init --recursive"
+- link:
+    ~/.aliases.d: aliases.d
+    ~/.functions.d: functions.d
+    ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
+    ~/.zshrc: zshrc
