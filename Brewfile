@@ -53,6 +53,7 @@ brew 'pianobar'
 brew 'the_silver_searcher'
 brew 'vim'
 brew 'tree'
+brew 'zsh-syntax-highlighting'
 
 # mac apps to install via caskroom
 cask 'atom'
