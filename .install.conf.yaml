@@ -4,7 +4,7 @@
     - "git submodule update --init --recursive"
 - link:
     ~/.aliases.d: aliases.d
-    ~/.functions.d: functions.d
+    ~/bin: bin
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.vim: vim
