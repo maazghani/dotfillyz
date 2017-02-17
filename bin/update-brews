@@ -2,11 +2,11 @@
 
 update-brews() {
   echo 'Starting brew updates'
-  pushd -q "$HOME"
   brew update
   brew upgrade
   brew cleanup -s
   brew cask cleanup
   brew prune
-  popd -q
 }
+
+update-brews

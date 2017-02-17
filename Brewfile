@@ -30,6 +30,7 @@ brew 'bash'
 brew 'cmake'
 brew 'cunit'
 brew 'curl', args: ['with-libssh2', 'with-nghttp2']
+brew 'ffmpeg'
 brew 'fontconfig'
 brew 'fortune'
 brew 'freetype'
