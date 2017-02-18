@@ -108,3 +108,9 @@
 	path = vim/bundle/vim-vagrant
 	url = https://github.com/hashivim/vim-vagrant
 	ignore = untracked
+[submodule "zsh/dircolors-solarized"]
+	path = zsh/dircolors-solarized
+	url = https://github.com/seebi/dircolors-solarized
+[submodule "zsh/zsh-syntax-highlighting"]
+	path = zsh/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting

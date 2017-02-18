@@ -56,3 +56,5 @@
 	sl = stash list
 	ss = stash save
 	st = status -s
+	update-submodules = submodule update --init --recursive
+

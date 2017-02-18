@@ -2,14 +2,19 @@
 
 set -e
 
-CONFIG=".install.conf.yaml"
+CONFIG="install.conf.yaml"
 DOTBOT_DIR="dotbot"
 
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+echo "Creating symlinks for dotfiles in $CONFIG"
 cd "${BASEDIR}"
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
+
+echo ".............."
+echo "Installing packages and applications from Brewfile"
 brew bundle
+echo "Setup complete"
