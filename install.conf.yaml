@@ -1,12 +1,22 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
 - clean:
     - "~"
-- shell:
-    - "git submodule update --init --recursive"
+
 - link:
+    ~/.agignore: agignore
     ~/.aliases.d: aliases.d
     ~/bin: bin
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
+    ~/.tmux.conf: tmux.conf
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
+    ~/.zsh: zsh
+
+- shell:
+    - "git update-submodules"
