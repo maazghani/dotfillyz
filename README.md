@@ -12,7 +12,7 @@ cd dotfillyz
 
 ### Built Using:
 
-* Uses [dotbot](https://github.com/anishathalye/dotbot) for install script. See `.install.conf.yaml`.
+* Uses [dotbot](https://github.com/anishathalye/dotbot) for install script. See `install.conf.yaml`.
 * Inspiration from [philoserf/newcastle](https://github.com/philoserf/newcastle)
-* Inspiration from [anisathalye/dotfiles](https://github.com/anishathalye/dotfiles)
+* Inspiration from [anishathalye/dotfiles](https://github.com/anishathalye/dotfiles)
 
